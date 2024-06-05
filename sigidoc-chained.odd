@@ -16,6 +16,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
+         <change who="#AS" when="2024-06-05">Preliminary version of descriptions for condition/@rend's values added</change>
          <change who="#AS" when="2024-05-28">Constraining values added to rs/@type nested in collection; @ana added to figDesc/n='r', 'v' as required for iconography</change>
          <change who="#AS" when="2024-04-16">Changes to altIdentifier deleted in order to have files validated against EpiDoc schema</change>
          <change who="#AS" when="2024-03-26">First SigiDoc ODD prepared: to be checked</change>
@@ -102,7 +103,7 @@
                </attList>
             </elementSpec>
             
-            <!-- condition -->
+            <!-- condition --><!-- last modified: AS 2024-06-05, to be finished -->
             <elementSpec ident="condition" module="msdescription" mode="change">
                <attList>
                   <!-- suggested values of condition/@rend -->
@@ -117,64 +118,64 @@
                      </datatype>
                      <valList type="semi" mode="change">
                         <valItem ident="blank-too-small">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Blank is too small for the matrix.</desc>
                         </valItem>
                         <valItem ident="broken">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is broken due to unvoluntary mechanical damage.</desc>
                         </valItem>
                         <valItem ident="clipped">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal has been clipped on purpose.</desc>
                         </valItem>
                         <valItem ident="cut">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal has been cut on purpose.</desc>
                         </valItem>
                         <valItem ident="deformed-blank">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is deformed.</desc>
                         </valItem>
                         <valItem ident="double-struck">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal struck at least twice with the same imprint.</desc>
                         </valItem>
                         <valItem ident="graffitied">
                            <desc xml:lang="en" versionDate="2024-02-25"></desc>
                         </valItem>
                         <valItem ident="not-centered">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Imprint is not centered.</desc>
                         </valItem>
                         <valItem ident="overstruck">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal struck with at least one different imprint.</desc>
                         </valItem>
                         <valItem ident="pierced">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal has been pierced, possibly on purpose.</desc>
                         </valItem>
                         <valItem ident="worn-edge">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is worn on the edge.</desc>
                         </valItem>
                         <valItem ident="obliterated">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is obliterated.</desc>
                         </valItem>
                         <valItem ident="crushed">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is crushed.</desc>
                         </valItem>
                         <valItem ident="mistruck">
                            <desc xml:lang="en" versionDate="2024-02-25"></desc>
                         </valItem>
                         <valItem ident="well-preserved">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is well preserved.</desc>
                         </valItem>
                         <valItem ident="well-struck">
                            <desc xml:lang="en" versionDate="2024-02-25"></desc>
                         </valItem>
                         <valItem ident="blank-too-large">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Blank is too large for the matrix.</desc>
                         </valItem>
                         <valItem ident="corroded">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is corroded.</desc>
                         </valItem>
                         <valItem ident="torn-channel">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Channel is torn.</desc>
                         </valItem>
                         <valItem ident="chipped">
-                           <desc xml:lang="en" versionDate="2024-02-25"></desc>
+                           <desc xml:lang="en" versionDate="2024-06-05">Seal is chipped.</desc>
                         </valItem>
                         <valItem ident="fragment">
                            <desc xml:lang="en" versionDate="2024-02-25"></desc>
