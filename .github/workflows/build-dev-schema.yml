@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'schema/tei-epidoc.xml'
+      - 'sigidoc.odd'
 
 jobs:
   build:
@@ -29,7 +29,7 @@ jobs:
           repository: "TEIC/Stylesheets"
       - name: "Build Schema"
         run: |
-          guidelines/xslt/TEI-Stylesheets/bin/teitorng Schema/sigidoc.xml schema/sigidoc.rng
+          Stylesheets/bin/teitorng sigidoc.odd sigidoc.rng
           rm -rf gh-pages/schema/dev
           mkdir -p gh-pages/schema/dev
           cp schema/sigidoc.* gh-pages/schema/dev/
