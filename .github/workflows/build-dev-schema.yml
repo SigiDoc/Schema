@@ -1,4 +1,4 @@
-name: Build EpiDoc Development Schema
+name: Build SigiDoc Development Schema
 
 on:
   push:
