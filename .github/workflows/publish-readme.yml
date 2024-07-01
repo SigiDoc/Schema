@@ -14,11 +14,13 @@ jobs:
     steps:
       - name: "Checkout repo"
         uses: actions/checkout@v4
+
       - name: "Checkout gh-pages branch"
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
+
       - name: "Publish README.md as index.html"
         uses: docker://pandoc/core:3.2
         with: 
@@ -29,6 +31,7 @@ jobs:
             --shift-heading-level-by=-1
             --output=gh-pages/index.html
             README.md
+
       - name: "Push to gh-pages branch"
         run: |
           cd gh-pages

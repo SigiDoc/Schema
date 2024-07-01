@@ -1,3 +1,6 @@
+# Updates the development version of the Schema on GitHub Pages each time the ODD is modified in the main branch.
+# Uses the build tools from the TEIC/Stylesheets repo to convert the ODD to an RNG schema
+
 name: Build EpiDoc Development Schema
 
 on:
@@ -10,30 +13,42 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: 
+
+    # We use this container because it contains Saxon. We don't require anything else from it.
+    container:
       image: teic/teidev-docker:latest
 
     steps:
       - name: "Checkout repo"
         uses: actions/checkout@v4
+
       - name: "Checkout gh-pages branch"
         uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
+
+      # The TEI stylesheets repo contains the build script to convert the ODD source to an RNG schema
       - name: "Checkout TEI stylesheets repo"
         uses: actions/checkout@v4
         with:
           repository: "TEIC/Stylesheets"
           path: tei-stylesheets
+
       - name: "Build Schema"
         run: |
+          # Convert ODD to RNG 
           tei-stylesheets/bin/teitorng sigidoc.odd sigidoc.rng
+          
+          # Copy compiled RNG to the dev directory in the gh-pages branch
           rm -rf gh-pages/schema/dev
           mkdir -p gh-pages/schema/dev
           cp sigidoc.* gh-pages/schema/dev/
+          
+          # Create directory indices
           tree -H '.' -T 'schema/' -I index.html -L 1 --noreport --charset utf-8 -o gh-pages/schema/index.html gh-pages/schema
           tree -H '.' -T 'dev/' -I index.html -L 1 --noreport --charset utf-8 -o gh-pages/schema/dev/index.html gh-pages/schema/dev
+
       - name: "Push to gh-pages branch."
         run: |
           cd gh-pages
