@@ -1,0 +1,73 @@
+name: Build SigiDoc Schema Release
+
+on:
+  push:
+    tags:
+      - 'v*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: teic/teidev-docker:latest
+
+    steps:
+      - name: "Setup env"
+        run: |
+          export RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
+          sh -c "git config --global --add safe.directory $PWD"
+      - name: "Checkout repo"
+        uses: actions/checkout@v4
+      - run: git checkout ${{ env.RELEASE_VERSION }}
+      - name: "Checkout gh-pages branch"
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: "Checkout TEI stylesheets repo"
+        uses: actions/checkout@v4
+        with:
+          repository: "TEIC/Stylesheets"
+          path: tei-stylesheets
+      - name: "Build schema"
+        run: |
+          export RELEASE_DIR=$(echo "$RELEASE_VERSION" | sed 's/^v//')
+          echo "RELEASE_DIR=$RELEASE_DIR" >> $GITHUB_ENV
+          tei-stylesheets/bin/teitorng sigidoc.odd sigidoc.rng
+          rm -rf "gh-pages/schema/$RELEASE_DIR"
+          mkdir -p "gh-pages/schema/$RELEASE_DIR"
+          rm -rf "gh-pages/schema/latest"
+          cp sigidoc.* "gh-pages/schema/$RELEASE_DIR"
+          rsync -av --mkpath "gh-pages/schema/$RELEASE_DIR/" gh-pages/schema/latest/
+          tree -H '.' -T 'Index of schema/' -I index.html -L 1 --noreport --charset utf-8 -o gh-pages/schema/index.html gh-pages/schema
+          tree -H '.' -T "Index of latest/" -I index.html -L 1 --noreport --charset utf-8 -o "gh-pages/schema/latest/index.html" "gh-pages/schema/latest"
+          tree -H '.' -T "Index of $RELEASE_DIR/" -I index.html -L 1 --noreport --charset utf-8 -o "gh-pages/schema/$RELEASE_DIR/index.html" "gh-pages/schema/$RELEASE_DIR"
+          # sed '/Previous versions/q' ReleaseNotes.txt | sed '$d' > release_notes
+      - name: "Push to gh-pages branch."
+        run: |
+          cd gh-pages
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Published ${{ env.RELEASE_VERSION }} release."
+          git push
+      - name: "Update latest branch."
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git push origin HEAD:latest --force
+      - name: "Create release artifacts"
+        run: |
+          cd gh-pages/schema
+          zip -r "SigiDoc-Schema-$RELEASE_VERSION.zip" "$RELEASE_DIR"
+          mv "SigiDoc-Schema-$RELEASE_VERSION.zip" ../../
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: "SigiDoc Release ${{ env.RELEASE_VERSION }}"
+          # body_path: release_notes
+          files: |
+            SigiDoc-Schema-${{ env.RELEASE_VERSION }}.zip
+          tag_name: ${{ env.RELEASE_VERSION }}
+          draft: true
