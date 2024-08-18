@@ -294,7 +294,7 @@
                <attList>
                   <attDef ident="type" mode="replace" usage="req">
                      <!-- suggested values of dim/@type -->
-                     <desc xml:lang="en" versionDate="2024-02-25">The`measurement of the dimensions (whole seal or imprint).</desc>
+                     <desc xml:lang="en" versionDate="2024-02-25">The measurement of the dimensions (whole seal or imprint).</desc>
                      <datatype minOccurs="1" maxOccurs="1">
                         <dataRef key="teidata.enumerated"/>
                      </datatype>
