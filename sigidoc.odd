@@ -640,7 +640,7 @@
                      </valList>
                   </attDef>
                   <!-- constraining values of figDesc/@ana -->
-                  <attDef ident="ana" mode="replace" usage="req">
+                  <attDef ident="ana" mode="change" usage="req">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
                      <datatype minOccurs="1" maxOccurs="unbounded">
                         <!-- documentation to be added -->
