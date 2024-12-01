@@ -645,7 +645,7 @@
                   <!-- constraining values of figDesc/@ana -->
                   <attDef ident="ana" mode="change" usage="req">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
-                     <datatype maxOccurs="unbounded">
+                     <datatype minOccurs="1" maxOccurs="unbounded">
                         <!-- documentation to be added -->
                         <dataRef key="teidata.enumerated"/>
                      </datatype>
