@@ -16,6 +16,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
+         <change who="#AS" when="2024-10-30">Constraining values for persName/@role when nested in rs[@type='collection-name' added</change>
          <change who="#AS" when="2024-06-05">Preliminary version of descriptions for condition/@rend's values added</change>
          <change who="#AS" when="2024-05-28">Constraining values added to rs/@type nested in collection; @ana added to figDesc/n='r', 'v' as required for iconography</change>
          <change who="#AS" when="2024-04-16">Changes to altIdentifier deleted in order to have files validated against EpiDoc schema</change>
@@ -1011,7 +1012,29 @@
                </attList>
             </elementSpec>
             
-            <!-- persName --><!-- changement effacé par #AS, non nécessaire -->
+            <!-- persName --><!-- AS 2024-10-30 -->
+            <elementSpec ident="persName" module="namesdates" mode="change">
+               <constraintSpec ident="persName" scheme="schematron" mode="add">
+                  <!-- constraining values for persName/@role when nested in rs[@type='collection-name' -->
+                  <constraint>
+                     <sch:pattern>
+                        <sch:rule context="tei:rs[@type='collection-name']/tei:persName">
+                           <sch:assert test="@role = 'collector'">With persName nested in rs @type='collection-name', @role with a value of 'collector' must be supplied.</sch:assert>
+                        </sch:rule>
+                     </sch:pattern>
+                  </constraint>
+               </constraintSpec>
+               <attList>
+                  <attDef ident="role" usage="opt" mode="change">
+                     <!-- suggested values of interp/@type -->
+                     <valList type="semi" mode="add">
+                        <valItem ident="collector">
+                           <desc xml:lang="en" versionDate="2024-03-05">The name of the owner of the seals collection.</desc><!-- to be improved -->
+                        </valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
 
             <!-- person --><!-- AS 2023-11-28 -->
             <elementSpec ident="person" module="namesdates" mode="change">
