@@ -647,7 +647,7 @@
                      <desc xml:lang="en" versionDate="2024-12-01"/>
                      <datatype minOccurs="1" maxOccurs="unbounded">
                         <!-- documentation to be added -->
-                        <dataRef key="teidata.enumerated"/>
+                        <dataRef key="teidata.pointer"/>
                      </datatype>
                      <valList mode="change" type="closed">
                         <!-- Main iconography: the following values point towards
