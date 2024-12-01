@@ -616,6 +616,14 @@
                               required</sch:assert>
                         </sch:rule>
                      </sch:pattern>
+                     <sch:rule context="tei:figure//tei:figDesc[@n='decoR']">
+                        <sch:assert
+                           test="not(@ana)">XXXXXXXXXXX</sch:assert>
+                     </sch:rule>
+                     <sch:rule context="tei:figure//tei:figDesc[@n='decoV']">
+                        <sch:assert
+                           test="not(@ana)">XXXXXXXXXXX</sch:assert>
+                     </sch:rule>
                   </constraint>
                </constraintSpec>
                <attList>
