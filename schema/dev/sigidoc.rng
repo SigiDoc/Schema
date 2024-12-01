@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-12-01T11:03:40Z. . 
+Schema generated from ODD source 2024-12-01T11:13:04Z. . 
 TEI Edition:  
 TEI Edition Location: https://www.tei-c.org/Vault/P5// 
   
@@ -17636,591 +17636,1170 @@ Suggested values include: 1] label; 2] data</a:documentation>
             </choice>
          </attribute>
          <attribute name="ana">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analysis) </a:documentation>
-            <list>
-               <oneOrMore>
-                  <choice>
-                     <value>2-persons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>3-persons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>4-persons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>5-persons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>6-persons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>animal</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An animal is depicted as main iconography. Horses and prominent animals within a scene can also be marked with this tag.</a:documentation>
-                     <value>architecture</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Architecture is depicted (not as an attribute).</a:documentation>
-                     <value>cross</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross is depicted (only as main iconography).</a:documentation>
-                     <value>eunuch</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A eunuch person is depicted.</a:documentation>
-                     <value>female</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A female person is depicted.</a:documentation>
-                     <value>male</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A male person is depicted.</a:documentation>
-                     <value>person</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person is depicted (independent from his posture) In the case of iconography depicting human beings: if only one person is present, there is no need to mention the number (e.g. "1-person"); in the case of two (or more) people, their number should be mentioned ("2-persons", "3-persons", ...), also when referring to the imperial family (which nevertheless has its own tag); then, the other tags relating to the 2, 3, ... persons can be mentioned all together ("2-persons male female emperor empress ..."). Please note: you should not indicate the number of persons in a scene.</a:documentation>
-                     <value>scene</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A scene is depicted (either a common religious scene as e.g. crucifixion or a special composition of a group of people within an act - no two saints or imperial families).</a:documentation>
-                     <value>undetermined</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only, when it is clear that an iconographic depiction was there, but is now not possible to identify, e.g. due to the state of preservation.</a:documentation>
-                     <value>archangel</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An archangel is depicted.</a:documentation>
-                     <value>Christ</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Christ is depicted (either as main iconography or as an "attribute").</a:documentation>
-                     <value>emperor</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An emperor or an empress is depicted.</a:documentation>
-                     <value>imperial-family</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A member of the imperial family is depicted (e.g. when an emperor is not depicted alone).</a:documentation>
-                     <value>prophet</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A prophet is depicted.</a:documentation>
-                     <value>saint</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A saint is depicted (not for the Virgin, Archangels, etc.).</a:documentation>
-                     <value>Virgin</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The Virgin is depicted as main iconography.</a:documentation>
-                     <value>bird</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bird is depicted: this term should be used additionally to the concrete bird type (e.g. dove, eagle, peacock,...).</a:documentation>
-                     <value>crane</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>dog</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>donkey</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>dove</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>dragon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>eagle</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>elephant</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>fish</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>griffon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>horse</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>lion</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>ox</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>peacock</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>rabbit-hare</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>ram</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>senmurv</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>sheep</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>snake</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>sphinx</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>wolf</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Adoration-of-the-Magi</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Anastasis</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Annunciation</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Ascension</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Baptism-of-Christ</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Christ-and-Zaccheus</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Crucifixion</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Deesis</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Dormition</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Entry-into-Jerusalem</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Flight-into-Egypt</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Hospitality-of-Abraham</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Myrrh-Bearers</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Nativity</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Presentation-of-Christ</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Presentation-of-the-Virgin</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Sacrifice-of-Isaac</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Transfiguration</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>castle</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>church</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>city-walls</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>temple</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>ornated</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An ornated cross is depicted.</a:documentation>
-                     <value>patriarchal</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A patriarchal cross is depicted (cross with two crossbars).</a:documentation>
-                     <value>potent</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross potent is depicted (cross with four crossbars at the ends).</a:documentation>
-                     <value>simple</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A simple cross with one crossbar is depicted.</a:documentation>
-                     <value>Daniel</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>David</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Elias</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Gabriel</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Samuel</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Akylina</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Amphilochos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Anastasia</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Andrew</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Anna</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Anthimos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Anthony</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Anthony-II-Kauleas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Antipas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Artemios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Athanasios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Athenogenes</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Auxentios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Barbara</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Barnabas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Basil</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Catherine</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Constantine-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Damian</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Demetrios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Diomedes</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Eleutherios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Epiphanios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Eugenios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Euphemia</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Eusebios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Eustathios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Eustratios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Euthymios-the-Great</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-George</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Germanos-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Gregory-of-Nyssa</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Gregory-Thaumatourgos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Gregory-Theologos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Ianouarios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Ignatios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Irene</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-John-Chrysostomos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-John-Kalybites</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-John-Prodromos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-John-the-Evangelist</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-John-Theologos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Joseph-the-Hymnographer</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Kodratos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Kosmas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Lazaros</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Luke</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Luke-the-Stylite</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Marc</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Mark</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Martinakios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Menas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Methodios-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Nicholas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Nikephoros</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Niketas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Panteleimon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Parthenios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Paul</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Peter</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Philip</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Platon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Portios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Prokopios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Sabas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Sabbas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Sergios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Sophia</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Stephen</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Stephen-the-Younger</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Symeon-the-New-Theologian</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Symeon-the-Stylite</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Tarasios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Thekla</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodora</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodore</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodore-Stratelates</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodore-the-Stoudite</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodore-the-Teron</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theodosios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Theopiste</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Thomas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Titos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Zenais</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>St-Zotikos</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexander</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexius-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexius-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexius-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexius-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Alexius-V</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Anastasius-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Anastasius-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Andronicus-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Andronicus-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Andronicus-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Andronicus-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Arcadius</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Basil-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Basil-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Basiliscus</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constans-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-IX</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-V</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-VI</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-VII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-VIII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-X</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantine-XI</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Constantius-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Heracleonas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Heraclius</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Ioannes-VIII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Irene</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Isaac-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Isaac-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-V</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-VI</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>John-VII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Jovian</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Julian</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Justin-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Justin-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Justinian-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Justinian-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo -I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo-V</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leo-VI</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Leontios</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Manuel-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Manuel-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Marcian</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Maurice</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-V</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-VI</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-VII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Michael-VIII</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Nicephorus-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Nicephorus-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Nicephorus-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Philippicus</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Phocas</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Romanus-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Romanus-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Romanus-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Romanus-IV</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Stauracius</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodora</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodore-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodore-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodosius-I</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodosius-II</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theodosius-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Theophilus</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Tiberius-II-Konstantinus</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Tiberius-III</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Valens</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Zeno</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>Zoe</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>bishop</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bishop saint is depicted.</a:documentation>
-                     <value>blessing</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted blessing.</a:documentation>
-                     <value>bust</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted as a bust or half-body.</a:documentation>
-                     <value>head</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only the head of a main person is depicted (without the upper body).</a:documentation>
-                     <value>military</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A military saint is depicted.</a:documentation>
-                     <value>on-horseback</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted riding on horseback (or within a scene).</a:documentation>
-                     <value>praying</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted praying (with hands raised).</a:documentation>
-                     <value>seated</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted seated (e.g. enthroned).</a:documentation>
-                     <value>standing</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted with full body standing.</a:documentation>
-                     <value>stylite</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A stylite is depicted (saint on a column)</a:documentation>
-                     <value>akakia</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>baton</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>box</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>branch</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A branch is depicted (e.g. in the beak of a bird).</a:documentation>
-                     <value>child</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A child is depicted (mostly Christ with the Virgin).</a:documentation>
-                     <value>church-model</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a miniature church is depicted.</a:documentation>
-                     <value>cross-in-hand</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a cross is depicted.</a:documentation>
-                     <value>cross-staff</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>cruciger-globe</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>globe</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>gospel</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>icon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>labarum</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>medaillon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A medaillon is depicted (mostly Christ).</a:documentation>
-                     <value>medical-instruments</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>scabbard</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>scepter</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>scroll</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>shield</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>spear</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>sword</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>crosslet</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Small decorative crosses are depicted.</a:documentation>
-                     <value>fleurons</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fleurons are depicted (as climbing plants vines, e.g. arising from a cross).</a:documentation>
-                     <value>flower</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A flower is depicted (e.g. with blossoms - not part of ornated crosses).</a:documentation>
-                     <value>Manus Dei</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>moon</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>on-globe</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on a globe (mostly a cross).</a:documentation>
-                     <value>on-steps</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on-steps (mostly a cross).</a:documentation>
-                     <value>star</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>sun</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>tongues of fire</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                     <value>tree</value>
-                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  </choice>
-               </oneOrMore>
-            </list>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>2-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>3-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>4-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>5-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>animal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An animal is depicted as main iconography. Horses and prominent animals within a scene can also be marked with this tag.</a:documentation>
+               <value>architecture</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Architecture is depicted (not as an attribute).</a:documentation>
+               <value>cross</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross is depicted (only as main iconography).</a:documentation>
+               <value>eunuch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A eunuch person is depicted.</a:documentation>
+               <value>female</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A female person is depicted.</a:documentation>
+               <value>male</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A male person is depicted.</a:documentation>
+               <value>person</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person is depicted (independent from his posture) In the case of iconography depicting human beings: if only one person is present, there is no need to mention the number (e.g. "1-person"); in the case of two (or more) people, their number should be mentioned ("2-persons", "3-persons", ...), also when referring to the imperial family (which nevertheless has its own tag); then, the other tags relating to the 2, 3, ... persons can be mentioned all together ("2-persons male female emperor empress ..."). Please note: you should not indicate the number of persons in a scene.</a:documentation>
+               <value>scene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A scene is depicted (either a common religious scene as e.g. crucifixion or a special composition of a group of people within an act - no two saints or imperial families).</a:documentation>
+               <value>undetermined</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only, when it is clear that an iconographic depiction was there, but is now not possible to identify, e.g. due to the state of preservation.</a:documentation>
+               <value>archangel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An archangel is depicted.</a:documentation>
+               <value>Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Christ is depicted (either as main iconography or as an "attribute").</a:documentation>
+               <value>emperor</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An emperor or an empress is depicted.</a:documentation>
+               <value>imperial-family</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A member of the imperial family is depicted (e.g. when an emperor is not depicted alone).</a:documentation>
+               <value>prophet</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A prophet is depicted.</a:documentation>
+               <value>saint</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A saint is depicted (not for the Virgin, Archangels, etc.).</a:documentation>
+               <value>Virgin</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The Virgin is depicted as main iconography.</a:documentation>
+               <value>bird</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bird is depicted: this term should be used additionally to the concrete bird type (e.g. dove, eagle, peacock,...).</a:documentation>
+               <value>crane</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dog</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>donkey</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dove</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dragon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>eagle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>elephant</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>fish</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>griffon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>horse</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>lion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ox</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>peacock</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>rabbit-hare</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ram</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>senmurv</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sheep</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>snake</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sphinx</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>wolf</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Adoration-of-the-Magi</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasis</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Annunciation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ascension</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Baptism-of-Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Christ-and-Zaccheus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Crucifixion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Deesis</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Dormition</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Entry-into-Jerusalem</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Flight-into-Egypt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hospitality-of-Abraham</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Myrrh-Bearers</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nativity</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Presentation-of-Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Presentation-of-the-Virgin</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Sacrifice-of-Isaac</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Transfiguration</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>castle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>church</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>city-walls</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>temple</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ornated</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An ornated cross is depicted.</a:documentation>
+               <value>patriarchal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A patriarchal cross is depicted (cross with two crossbars).</a:documentation>
+               <value>potent</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross potent is depicted (cross with four crossbars at the ends).</a:documentation>
+               <value>simple</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A simple cross with one crossbar is depicted.</a:documentation>
+               <value>Daniel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>David</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Elias</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Gabriel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Samuel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Akylina</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Amphilochos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anastasia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Andrew</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anna</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthimos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthony</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthony-II-Kauleas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Antipas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Artemios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Athanasios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Athenogenes</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Auxentios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Barbara</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Barnabas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Basil</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Catherine</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Constantine-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Damian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Demetrios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Diomedes</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eleutherios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Epiphanios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eugenios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Euphemia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eusebios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eustathios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eustratios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Euthymios-the-Great</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-George</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Germanos-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-of-Nyssa</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-Thaumatourgos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-Theologos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Ianouarios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Ignatios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Irene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Chrysostomos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Kalybites</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Prodromos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-the-Evangelist</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Theologos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Joseph-the-Hymnographer</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Kodratos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Kosmas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Lazaros</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Luke</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Luke-the-Stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Marc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Mark</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Martinakios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Menas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Methodios-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Nicholas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Nikephoros</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Niketas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Panteleimon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Parthenios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Paul</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Peter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Philip</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Platon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Portios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Prokopios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sabas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sabbas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sergios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sophia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Stephen</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Stephen-the-Younger</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Symeon-the-New-Theologian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Symeon-the-Stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Tarasios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Thekla</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodora</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-Stratelates</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-the-Stoudite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-the-Teron</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodosios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theopiste</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Thomas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Titos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Zenais</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Zotikos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexander</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Arcadius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basil-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basil-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basiliscus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constans-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-IX</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-X</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-XI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Heracleonas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Heraclius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ioannes-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Irene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Isaac-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Isaac-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Jovian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Julian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justin-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justin-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justinian-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justinian-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo -I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leontios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Manuel-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Manuel-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Marcian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Maurice</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Philippicus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Phocas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Stauracius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodora</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodore-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodore-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theophilus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Tiberius-II-Konstantinus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Tiberius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Valens</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Zeno</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Zoe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bishop</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bishop saint is depicted.</a:documentation>
+               <value>blessing</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted blessing.</a:documentation>
+               <value>bust</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted as a bust or half-body.</a:documentation>
+               <value>head</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only the head of a main person is depicted (without the upper body).</a:documentation>
+               <value>military</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A military saint is depicted.</a:documentation>
+               <value>on-horseback</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted riding on horseback (or within a scene).</a:documentation>
+               <value>praying</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted praying (with hands raised).</a:documentation>
+               <value>seated</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted seated (e.g. enthroned).</a:documentation>
+               <value>standing</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted with full body standing.</a:documentation>
+               <value>stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A stylite is depicted (saint on a column)</a:documentation>
+               <value>akakia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>baton</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>box</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>branch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A branch is depicted (e.g. in the beak of a bird).</a:documentation>
+               <value>child</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A child is depicted (mostly Christ with the Virgin).</a:documentation>
+               <value>church-model</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a miniature church is depicted.</a:documentation>
+               <value>cross-in-hand</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a cross is depicted.</a:documentation>
+               <value>cross-staff</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>cruciger-globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>gospel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>icon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>labarum</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>medaillon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A medaillon is depicted (mostly Christ).</a:documentation>
+               <value>medical-instruments</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scabbard</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scepter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scroll</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>shield</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>spear</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sword</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>crosslet</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Small decorative crosses are depicted.</a:documentation>
+               <value>fleurons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fleurons are depicted (as climbing plants vines, e.g. arising from a cross).</a:documentation>
+               <value>flower</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A flower is depicted (e.g. with blossoms - not part of ornated crosses).</a:documentation>
+               <value>Manus Dei</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>moon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>on-globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on a globe (mostly a cross).</a:documentation>
+               <value>on-steps</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on-steps (mostly a cross).</a:documentation>
+               <value>star</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sun</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>tongues of fire</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>tree</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
+         </attribute>
+         <attribute name="ana">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>2-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>3-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>4-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>5-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>6-persons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>animal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An animal is depicted as main iconography. Horses and prominent animals within a scene can also be marked with this tag.</a:documentation>
+               <value>architecture</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Architecture is depicted (not as an attribute).</a:documentation>
+               <value>cross</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross is depicted (only as main iconography).</a:documentation>
+               <value>eunuch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A eunuch person is depicted.</a:documentation>
+               <value>female</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A female person is depicted.</a:documentation>
+               <value>male</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A male person is depicted.</a:documentation>
+               <value>person</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person is depicted (independent from his posture) In the case of iconography depicting human beings: if only one person is present, there is no need to mention the number (e.g. "1-person"); in the case of two (or more) people, their number should be mentioned ("2-persons", "3-persons", ...), also when referring to the imperial family (which nevertheless has its own tag); then, the other tags relating to the 2, 3, ... persons can be mentioned all together ("2-persons male female emperor empress ..."). Please note: you should not indicate the number of persons in a scene.</a:documentation>
+               <value>scene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A scene is depicted (either a common religious scene as e.g. crucifixion or a special composition of a group of people within an act - no two saints or imperial families).</a:documentation>
+               <value>undetermined</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only, when it is clear that an iconographic depiction was there, but is now not possible to identify, e.g. due to the state of preservation.</a:documentation>
+               <value>archangel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An archangel is depicted.</a:documentation>
+               <value>Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Christ is depicted (either as main iconography or as an "attribute").</a:documentation>
+               <value>emperor</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An emperor or an empress is depicted.</a:documentation>
+               <value>imperial-family</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A member of the imperial family is depicted (e.g. when an emperor is not depicted alone).</a:documentation>
+               <value>prophet</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A prophet is depicted.</a:documentation>
+               <value>saint</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A saint is depicted (not for the Virgin, Archangels, etc.).</a:documentation>
+               <value>Virgin</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The Virgin is depicted as main iconography.</a:documentation>
+               <value>bird</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bird is depicted: this term should be used additionally to the concrete bird type (e.g. dove, eagle, peacock,...).</a:documentation>
+               <value>crane</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dog</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>donkey</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dove</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>dragon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>eagle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>elephant</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>fish</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>griffon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>horse</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>lion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ox</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>peacock</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>rabbit-hare</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ram</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>senmurv</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sheep</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>snake</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sphinx</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>wolf</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Adoration-of-the-Magi</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasis</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Annunciation</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ascension</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Baptism-of-Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Christ-and-Zaccheus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Crucifixion</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Deesis</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Dormition</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Entry-into-Jerusalem</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Flight-into-Egypt</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Hospitality-of-Abraham</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Myrrh-Bearers</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nativity</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Presentation-of-Christ</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Presentation-of-the-Virgin</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Sacrifice-of-Isaac</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Transfiguration</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>castle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>church</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>city-walls</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>temple</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>ornated</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An ornated cross is depicted.</a:documentation>
+               <value>patriarchal</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A patriarchal cross is depicted (cross with two crossbars).</a:documentation>
+               <value>potent</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A cross potent is depicted (cross with four crossbars at the ends).</a:documentation>
+               <value>simple</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A simple cross with one crossbar is depicted.</a:documentation>
+               <value>Daniel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>David</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Elias</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Gabriel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Samuel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Akylina</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Amphilochos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anastasia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Andrew</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anna</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthimos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthony</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Anthony-II-Kauleas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Antipas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Artemios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Athanasios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Athenogenes</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Auxentios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Barbara</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Barnabas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Basil</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Catherine</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Constantine-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Damian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Demetrios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Diomedes</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eleutherios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Epiphanios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eugenios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Euphemia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eusebios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eustathios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Eustratios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Euthymios-the-Great</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-George</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Germanos-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-of-Nyssa</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-Thaumatourgos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Gregory-Theologos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Ianouarios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Ignatios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Irene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Chrysostomos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Kalybites</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Prodromos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-the-Evangelist</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-John-Theologos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Joseph-the-Hymnographer</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Kodratos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Kosmas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Lazaros</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Luke</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Luke-the-Stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Marc</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Mark</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Martinakios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Menas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Methodios-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Nicholas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Nikephoros</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Niketas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Panteleimon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Parthenios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Paul</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Peter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Philip</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Platon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Portios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Prokopios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sabas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sabbas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sergios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Sophia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Stephen</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Stephen-the-Younger</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Symeon-the-New-Theologian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Symeon-the-Stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Tarasios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Thekla</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodora</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-Stratelates</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-the-Stoudite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodore-the-Teron</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theodosios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Theopiste</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Thomas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Titos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Zenais</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>St-Zotikos</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexander</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Alexius-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Anastasius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Andronicus-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Arcadius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basil-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basil-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Basiliscus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constans-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-IX</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-X</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantine-XI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Constantius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Heracleonas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Heraclius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Ioannes-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Irene</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Isaac-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Isaac-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>John-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Jovian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Julian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justin-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justin-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justinian-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Justinian-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo -I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leo-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Leontios</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Manuel-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Manuel-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Marcian</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Maurice</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-V</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VI</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Michael-VIII</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Nicephorus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Philippicus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Phocas</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Romanus-IV</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Stauracius</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodora</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodore-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodore-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-I</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-II</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theodosius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Theophilus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Tiberius-II-Konstantinus</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Tiberius-III</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Valens</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Zeno</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>Zoe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>bishop</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A bishop saint is depicted.</a:documentation>
+               <value>blessing</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted blessing.</a:documentation>
+               <value>bust</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted as a bust or half-body.</a:documentation>
+               <value>head</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only the head of a main person is depicted (without the upper body).</a:documentation>
+               <value>military</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A military saint is depicted.</a:documentation>
+               <value>on-horseback</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted riding on horseback (or within a scene).</a:documentation>
+               <value>praying</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted praying (with hands raised).</a:documentation>
+               <value>seated</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted seated (e.g. enthroned).</a:documentation>
+               <value>standing</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A main person is depicted with full body standing.</a:documentation>
+               <value>stylite</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A stylite is depicted (saint on a column)</a:documentation>
+               <value>akakia</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>baton</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>box</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>branch</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A branch is depicted (e.g. in the beak of a bird).</a:documentation>
+               <value>child</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A child is depicted (mostly Christ with the Virgin).</a:documentation>
+               <value>church-model</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a miniature church is depicted.</a:documentation>
+               <value>cross-in-hand</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A person holding a cross is depicted.</a:documentation>
+               <value>cross-staff</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>cruciger-globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>gospel</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>icon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>labarum</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>medaillon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A medaillon is depicted (mostly Christ).</a:documentation>
+               <value>medical-instruments</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scabbard</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scepter</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>scroll</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>shield</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>spear</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sword</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>crosslet</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Small decorative crosses are depicted.</a:documentation>
+               <value>fleurons</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fleurons are depicted (as climbing plants vines, e.g. arising from a cross).</a:documentation>
+               <value>flower</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A flower is depicted (e.g. with blossoms - not part of ornated crosses).</a:documentation>
+               <value>Manus Dei</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>moon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>on-globe</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on a globe (mostly a cross).</a:documentation>
+               <value>on-steps</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The main iconography is mounted on-steps (mostly a cross).</a:documentation>
+               <value>star</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>sun</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>tongues of fire</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <value>tree</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            </choice>
          </attribute>
          <empty/>
       </element>
