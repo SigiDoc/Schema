@@ -641,17 +641,17 @@
                      </valList>
                   </attDef>
                   <!-- constraining values of figDesc/@ana -->
-                  <!--<attDef ident="ana" mode="change" usage="opt">
+                  <attDef ident="ana" mode="change" usage="opt">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
                      <datatype minOccurs="1" maxOccurs="unbounded">
-                        <!-\- documentation to be added -\->
+                        <!-- documentation to be added -->
                         <dataRef key="teidata.pointer"/>
                      </datatype>
                      <valList mode="add" type="closed">
-                        <!-\- Main iconography: the following values point towards
+                        <!-- Main iconography: the following values point towards
                         the main iconography on the seal and should only be used to describe the
                         most prominent elements on the seal (no attributes or parts of a
-                        scene). -\->
+                        scene). -->
                         <valItem ident="2-persons">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -715,7 +715,7 @@
                               an iconographic depiction was there, but is now not possible to
                               identify, e.g. due to the state of preservation.</desc>
                         </valItem>
-                        <!-\- People: the following names describe identifiable figures on the seal (except for scenes) -\->
+                        <!-- People: the following names describe identifiable figures on the seal (except for scenes) -->
                         <valItem ident="archangel">
                            <desc xml:lang="en" versionDate="2024-12-01">An archangel is
                               depicted.</desc>
@@ -745,9 +745,9 @@
                            <desc xml:lang="en" versionDate="2024-12-01">The Virgin is depicted as
                               main iconography.</desc>
                         </valItem>
-                        <!-\- Animals: the following terms describe different types of animals.
+                        <!-- Animals: the following terms describe different types of animals.
                            Whenever an animal is depicted, the matching term should be tagged,
-                           no matter if it is main iconography or part of a scene -\->
+                           no matter if it is main iconography or part of a scene -->
                         <valItem ident="bird">
                            <desc xml:lang="en" versionDate="2024-12-01">A bird is depicted: this
                               term should be used additionally to the concrete bird type (e.g. dove,
@@ -813,7 +813,7 @@
                         <valItem ident="wolf">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Scenes: the following terms describe common religious scenes on seals -\->
+                        <!-- Scenes: the following terms describe common religious scenes on seals -->
                         <valItem ident="Adoration-of-the-Magi">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -868,9 +868,9 @@
                         <valItem ident="Transfiguration">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Architecture: the following terms describe architecture within the main iconography;
+                        <!-- Architecture: the following terms describe architecture within the main iconography;
                            a more detailed identification is not necessary
-                           (i.e. "architecture church Hagia Sophia": Hagia Sophia not necessary) -\->
+                           (i.e. "architecture church Hagia Sophia": Hagia Sophia not necessary) -->
                         <valItem ident="castle">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -883,8 +883,8 @@
                         <valItem ident="temple">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Cross types: the following terms describe different types of crosses as main iconography.
-                           The terms should be used to describe the form of the central cross on the seal -\->
+                        <!-- Cross types: the following terms describe different types of crosses as main iconography.
+                           The terms should be used to describe the form of the central cross on the seal -->
                         <valItem ident="ornated">
                            <desc xml:lang="en" versionDate="2024-12-01">An ornated cross is
                               depicted.</desc>
@@ -901,7 +901,7 @@
                            <desc xml:lang="en" versionDate="2024-12-01">A simple cross with one
                               crossbar is depicted.</desc>
                         </valItem>
-                        <!-\- Saints (including prophets and archangels) -\->
+                        <!-- Saints (including prophets and archangels) -->
                         <valItem ident="Daniel">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -1175,7 +1175,7 @@
                         <valItem ident="St-Zotikos">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Emperors -\->
+                        <!-- Emperors -->
                         <valItem ident="Alexander">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -1440,8 +1440,8 @@
                         <valItem ident="Zoe">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Posture/appearance: the following terms point towards the appearance of persons in the main iconography.
-                           The terms should only be used to describe the posture of a human person (not an animal) -\->
+                        <!-- Posture/appearance: the following terms point towards the appearance of persons in the main iconography.
+                           The terms should only be used to describe the posture of a human person (not an animal) -->
                         <valItem ident="bishop">
                            <desc xml:lang="en" versionDate="2024-12-01">A bishop saint is
                               depicted.</desc>
@@ -1482,8 +1482,8 @@
                            <desc xml:lang="en" versionDate="2024-12-01">A stylite is depicted (saint
                               on a column)</desc>
                         </valItem>
-                        <!-\- Attributes: the following terms describe the attributes of people or animals in the main iconography.
-                           They are used to describe items in the hands of a person or the beak of an animal -\->
+                        <!-- Attributes: the following terms describe the attributes of people or animals in the main iconography.
+                           They are used to describe items in the hands of a person or the beak of an animal -->
                         <valItem ident="akakia">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
@@ -1552,9 +1552,9 @@
                         <valItem ident="sword">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <!-\- Secondary iconography: the following terms point to additional and decorative iconography on seals.
+                        <!-- Secondary iconography: the following terms point to additional and decorative iconography on seals.
                            The terms should only be used with regard to an iconography field
-                           and not to refer to decorative elements next to a legend -\->
+                           and not to refer to decorative elements next to a legend -->
                         <valItem ident="crosslet">
                            <desc xml:lang="en" versionDate="2024-12-01">Small decorative crosses are
                               depicted.</desc>
@@ -1594,7 +1594,7 @@
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
                      </valList>
-                  </attDef>-->
+                  </attDef>
                </attList>
             </elementSpec>
 
