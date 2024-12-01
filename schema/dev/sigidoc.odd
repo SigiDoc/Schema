@@ -649,7 +649,7 @@
                         <!-- documentation to be added -->
                         <dataRef key="teidata.enumerated"/>
                      </datatype>
-                     <valList mode="change" type="closed">
+                     <valList mode="change" type="semi">
                         <!-- Main iconography: the following values point towards
                         the main iconography on the seal and should only be used to describe the
                         most prominent elements on the seal (no attributes or parts of a
