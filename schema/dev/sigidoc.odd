@@ -642,6 +642,10 @@
                   <!-- constraining values of figDesc/@ana -->
                   <attDef ident="ana" mode="change" usage="req">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
+                     <datatype minOccurs="1" maxOccurs="unbounded">
+                        <!-- documentation to be added -->
+                        <dataRef key="teidata.enumerated"/>
+                     </datatype>
                      <valList mode="change" type="closed">
                         <!-- Main iconography: the following values point towards
                         the main iconography on the seal and should only be used to describe the
