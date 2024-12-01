@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-12-01T15:21:42Z. . 
+Schema generated from ODD source 2024-12-01T15:23:56Z. . 
 TEI Edition:  
 TEI Edition Location: https://www.tei-c.org/Vault/P5// 
   
@@ -17602,20 +17602,6 @@ Suggested values include: 1] label; 2] data</a:documentation>
                               required</sch:assert>
             </sch:rule>
          </sch:pattern>
-         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-figDesc-figDesc-constraint-rule-105">
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:figure//tei:figDesc[@n='decoR']">
-               <sch:assert test="not(@ana)">XXXXXXXXXXX</sch:assert>
-            </sch:rule>
-            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
-                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:figure//tei:figDesc[@n='decoV']">
-               <sch:assert test="not(@ana)">XXXXXXXXXXX</sch:assert>
-            </sch:rule>
-         </pattern>
          <ref name="att.global.attribute.xmlid"/>
          <ref name="att.global.attribute.xmllang"/>
          <ref name="att.global.attribute.xmlbase"/>
