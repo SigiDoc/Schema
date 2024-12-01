@@ -639,7 +639,7 @@
                      </valList>
                   </attDef>
                   <!-- constraining values of figDesc/@ana -->
-                  <attDef ident="ana" mode="add" usage="req">
+                  <attDef ident="ana" mode="change" usage="req">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
                      <valList mode="change" type="closed">
                         <!-- Main iconography: the following values point towards
