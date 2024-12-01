@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-08-18T14:26:23Z. . 
+Schema generated from ODD source 2024-12-01T08:19:01Z. . 
 TEI Edition:  
 TEI Edition Location: https://www.tei-c.org/Vault/P5// 
   
@@ -15330,11 +15330,51 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
       <element name="persName">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(personal name) contains a proper noun or proper-noun phrase referring to a person, possibly including one or more of the person's forenames, surnames, honorifics, added names, etc. [13.2.1. Personal Names]</a:documentation>
          <ref name="macro.phraseSeq"/>
+         <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+            <sch:rule context="tei:rs[@type='collection-name']/tei:persName">
+               <sch:assert test="@role = 'collector'">With persName nested in rs @type='collection-name', @role with a value of 'collector' must be supplied.</sch:assert>
+            </sch:rule>
+         </sch:pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei-epidoc-sigidoc-persName-calendar-check-persName-constraint-rule-81">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"
+                      context="tei:*[@calendar]">
+               <sch:assert test="string-length( normalize-space(.) ) gt 0"> @calendar indicates one or more
+                        systems or calendars to which the date represented by the content of this element belongs,
+                        but this <sch:name/> element has no textual content.</sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
          <ref name="att.editLike.attributes"/>
-         <ref name="att.personal.attributes"/>
+         <ref name="att.personal.attribute.full"/>
+         <ref name="att.personal.attribute.sort"/>
+         <ref name="att.naming.attribute.nymRef"/>
+         <ref name="att.canonical.attribute.key"/>
+         <ref name="att.canonical.attribute.ref"/>
          <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.
+Suggested values include: 1] collector</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>collector</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name of the owner of the seals collection.</a:documentation>
+                        <data type="token">
+                           <param name="pattern">[^\p{C}\p{Z}]+</param>
+                        </data>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
          <optional>
             <attribute name="calendar">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates one or more systems or calendars to which the date represented by the content of this element belongs.</a:documentation>
@@ -15349,7 +15389,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-persName-calendar-calendar-check-persName-constraint-rule-80">
+                  id="tei-epidoc-sigidoc-persName-calendar-calendar-check-persName-constraint-rule-82">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15435,7 +15475,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-placeName-calendar-calendar-check-placeName-constraint-rule-81">
+                  id="tei-epidoc-sigidoc-placeName-calendar-calendar-check-placeName-constraint-rule-83">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15470,7 +15510,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-bloc-calendar-calendar-check-bloc-constraint-rule-82">
+                  id="tei-epidoc-sigidoc-bloc-calendar-calendar-check-bloc-constraint-rule-84">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15505,7 +15545,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-country-calendar-calendar-check-country-constraint-rule-83">
+                  id="tei-epidoc-sigidoc-country-calendar-calendar-check-country-constraint-rule-85">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15540,7 +15580,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-region-calendar-calendar-check-region-constraint-rule-84">
+                  id="tei-epidoc-sigidoc-region-calendar-calendar-check-region-constraint-rule-86">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15575,7 +15615,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-settlement-calendar-calendar-check-settlement-constraint-rule-85">
+                  id="tei-epidoc-sigidoc-settlement-calendar-calendar-check-settlement-constraint-rule-87">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15610,7 +15650,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-district-calendar-calendar-check-district-constraint-rule-86">
+                  id="tei-epidoc-sigidoc-district-calendar-calendar-check-district-constraint-rule-88">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15647,7 +15687,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-offset-calendar-calendar-check-offset-constraint-rule-87">
+                  id="tei-epidoc-sigidoc-offset-calendar-calendar-check-offset-constraint-rule-89">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15683,7 +15723,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-geogName-calendar-calendar-check-geogName-constraint-rule-88">
+                  id="tei-epidoc-sigidoc-geogName-calendar-calendar-check-geogName-constraint-rule-90">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15720,7 +15760,7 @@ Suggested values include: 1] discovered; 2] rediscovered; 3] first-seen; 4] firs
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-geogFeat-calendar-calendar-check-geogFeat-constraint-rule-89">
+                  id="tei-epidoc-sigidoc-geogFeat-calendar-calendar-check-geogFeat-constraint-rule-91">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15778,7 +15818,7 @@ Sample values include: 1] caesarean (caesarean section); 2] vaginal (vaginal del
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-birth-calendar-calendar-check-birth-constraint-rule-90">
+                  id="tei-epidoc-sigidoc-birth-calendar-calendar-check-birth-constraint-rule-92">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15824,7 +15864,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-death-calendar-calendar-check-death-constraint-rule-91">
+                  id="tei-epidoc-sigidoc-death-calendar-calendar-check-death-constraint-rule-93">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15917,7 +15957,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-event-calendar-calendar-check-event-constraint-rule-92">
+                  id="tei-epidoc-sigidoc-event-calendar-calendar-check-event-constraint-rule-94">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15952,7 +15992,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-floruit-calendar-calendar-check-floruit-constraint-rule-93">
+                  id="tei-epidoc-sigidoc-floruit-calendar-calendar-check-floruit-constraint-rule-95">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -15987,7 +16027,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-gender-calendar-calendar-check-gender-constraint-rule-94">
+                  id="tei-epidoc-sigidoc-gender-calendar-calendar-check-gender-constraint-rule-96">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16246,7 +16286,7 @@ Sample values include: 1] proclaimed; 2] assumed; 3] verified; 4] clinical; 5] b
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-location-calendar-calendar-check-location-constraint-rule-95">
+                  id="tei-epidoc-sigidoc-location-calendar-calendar-check-location-constraint-rule-97">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16604,7 +16644,7 @@ Suggested values include: 1] conjecture (conjecture); 2] selfIdentification (sel
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-persPronouns-calendar-calendar-check-persPronouns-constraint-rule-96">
+                  id="tei-epidoc-sigidoc-persPronouns-calendar-calendar-check-persPronouns-constraint-rule-98">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16682,7 +16722,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-relation-reforkeyorname-constraint-assert-99">
+                  id="tei-epidoc-sigidoc-relation-reforkeyorname-constraint-assert-101">
             <rule context="tei:relation">
                <assert xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                        xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16727,7 +16767,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-relation-calendar-calendar-check-relation-constraint-rule-97">
+                  id="tei-epidoc-sigidoc-relation-calendar-calendar-check-relation-constraint-rule-99">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16840,7 +16880,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-state-calendar-calendar-check-state-constraint-rule-98">
+                  id="tei-epidoc-sigidoc-state-calendar-calendar-check-state-constraint-rule-100">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -16876,7 +16916,7 @@ Sample values include: 1] e (e); 2] he (he); 3] she (she); 4] they (they)</a:doc
          </optional>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-objectName-calendar-calendar-check-objectName-constraint-rule-99">
+                  id="tei-epidoc-sigidoc-objectName-calendar-calendar-check-objectName-constraint-rule-101">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -17310,7 +17350,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-rdgGrp-only1lem-constraint-assert-103">
+                  id="tei-epidoc-sigidoc-rdgGrp-only1lem-constraint-assert-105">
             <rule context="tei:rdgGrp">
                <sch:assert xmlns="http://www.tei-c.org/ns/1.0"
                            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -17358,7 +17398,7 @@ Sample values include: 1] homeoteleuton; 2] homeoarchy; 3] paleographicConfusion
          </attribute>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei-epidoc-sigidoc-variantEncoding-location-variantEncodingLocation-constraint-rule-100">
+                  id="tei-epidoc-sigidoc-variantEncoding-location-variantEncodingLocation-constraint-rule-102">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:variantEncoding">
