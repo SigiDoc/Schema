@@ -16,6 +16,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
+         <change who="#AS" when="2024-12-01">Constraining values for figDesc/@ana added</change>
          <change who="#AS" when="2024-10-30">Constraining values for persName/@role when nested in
             rs[@type='collection-name' added</change>
          <change who="#AS" when="2024-06-05">Preliminary version of descriptions for
@@ -639,7 +640,7 @@
                      </valList>
                   </attDef>
                   <!-- constraining values of figDesc/@ana -->
-                  <attDef ident="ana" mode="change" usage="req">
+                  <attDef ident="ana" mode="replace" usage="req">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
                      <valList mode="change" type="closed">
                         <!-- Main iconography: the following values point towards
