@@ -599,7 +599,7 @@
             </elementSpec>
 
             <!-- figDesc -->
-            <!-- AS 2023-12-09; last modified: AS 2024-05-28 -->
+            <!-- AS 2023-12-09; last modified: AS 2024-12-04 -->
             <elementSpec ident="figDesc" module="figures" mode="change">
                <constraintSpec ident="figDesc" scheme="schematron" mode="add">
                   <constraint>
@@ -641,12 +641,8 @@
                      </valList>
                   </attDef>
                   <!-- constraining values of figDesc/@ana -->
-                  <attDef ident="ana" mode="change" usage="req">
+                  <attDef ident="ana" mode="change" usage="rec">
                      <desc xml:lang="en" versionDate="2024-12-01"/>
-                     <!--<datatype minOccurs="1" maxOccurs="unbounded">
-                        <!-\- documentation to be added -\->
-                        <dataRef key="teidata.pointer"/>
-                     </datatype>-->
                      <valList mode="add" type="closed">
                         <!-- Main iconography: the following values point towards
                         the main iconography on the seal and should only be used to describe the
