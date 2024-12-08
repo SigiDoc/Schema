@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-12-04T15:06:35Z. . 
+Schema generated from ODD source 2024-12-08T18:48:43Z. . 
 TEI Edition:  
 TEI Edition Location: https://www.tei-c.org/Vault/P5// 
   
@@ -6438,7 +6438,7 @@ Suggested values include: 1] photo; 2] drawing; 3] analog; 4] RTI; 5] 3D-model</
                <value>photo</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">For a digital photograph of the seal itself.</a:documentation>
                <value>drawing</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">For a digital photograph of a drawing of a seal.</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">For a digital reproduction of a drawing of a seal.</a:documentation>
                <value>analog</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">For a digital reproduction of/from an analog photograph of a seal (microfilm, film negatives, traditional printed photos, etc.).</a:documentation>
                <value>RTI</value>
