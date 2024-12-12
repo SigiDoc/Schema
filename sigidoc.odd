@@ -76,10 +76,6 @@
                         3] gen ; 4] nom ; 5] voc ; 6] acc-dat ; 7] acc-gen ; 8] acc-nom ; 9] acc-voc
                         ; 10] dat-gen ; 11] dat-nom ; 12] dat-voc ; 13] gen-nom ; 14] gen-voc ; 15]
                         nom-voc ; 16] und.</desc>
-                     <datatype minOccurs="1" maxOccurs="unbounded">
-                        <!-- documentation to be added -->
-                        <dataRef key="teidata.enumerated"/>
-                     </datatype>
                      <valList type="closed" mode="change">
                         <valItem ident="acc">
                            <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
