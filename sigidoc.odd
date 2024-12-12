@@ -16,7 +16,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
-         <change who="#AS" when="2024-12-12">Constraining values for ab/@ana added</change>
+         <change who="#AS" when="2024-12-12">Constraining values for ab/@ana added; "cross" value added to div/@rend</change>
          <change who="#AS" when="2024-12-01">Constraining values for figDesc/@ana added</change>
          <change who="#AS" when="2024-10-30">Constraining values for persName/@role when nested in
             rs[@type='collection-name' added</change>
@@ -566,6 +566,9 @@
                         <valItem ident="columns">
                            <desc xml:lang="en" versionDate="2024-02-24">For texts displayed on
                               vertical columns.</desc>
+                        </valItem>
+                        <valItem ident="cross">
+                           <desc xml:lang="en" versionDate="2024-12-12">For texts displayed in a cross shape.</desc>
                         </valItem>
                         <valItem ident="monogram-block">
                            <desc xml:lang="en" versionDate="2024-03-09">For texts displayed as a
