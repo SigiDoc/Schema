@@ -16,6 +16,7 @@
          </sourceDesc>
       </fileDesc>
       <revisionDesc>
+         <change who="#AS" when="2024-12-12">Constraining values for ab/@ana added</change>
          <change who="#AS" when="2024-12-01">Constraining values for figDesc/@ana added</change>
          <change who="#AS" when="2024-10-30">Constraining values for persName/@role when nested in
             rs[@type='collection-name' added</change>
@@ -63,6 +64,92 @@
             <moduleRef key="dictionaries"/>
 
             <!--        CHANGED ELEMENT SPECS        -->
+            
+            <!-- ab -->
+            <!-- AS 2024-12-12 -->
+
+            <elementSpec ident="ab" module="linking" mode="change">
+               <!-- constraining values of ab/@ana -->
+               <attList>
+                  <attDef ident="ana" mode="change" usage="rec">
+                     <desc xml:lang="en" versionDate="2024-12-12">Values include: 1] acc ; 2] dat ;
+                        3] gen ; 4] nom ; 5] voc ; 6] acc-dat ; 7] acc-gen ; 8] acc-nom ; 9] acc-voc
+                        ; 10] dat-gen ; 11] dat-nom ; 12] dat-voc ; 13] gen-nom ; 14] gen-voc ; 15]
+                        nom-voc ; 16] und.</desc>
+                     <datatype minOccurs="1" maxOccurs="unbounded">
+                        <!-- documentation to be added -->
+                        <dataRef key="teidata.enumerated"/>
+                     </datatype>
+                     <valList type="closed" mode="change">
+                        <valItem ident="acc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              accusative case.</desc>
+                        </valItem>
+                        <valItem ident="dat">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the dative
+                              case.</desc>
+                        </valItem>
+                        <valItem ident="gen">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              genitive case.</desc>
+                        </valItem>
+                        <valItem ident="nom">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              nominative case.</desc>
+                        </valItem>
+                        <valItem ident="voc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              vocative case.</desc>
+                        </valItem>
+                        <valItem ident="acc-dat">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              accusative and dative case.</desc>
+                        </valItem>
+                        <valItem ident="acc-gen">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              accusative and genitive case.</desc>
+                        </valItem>
+                        <valItem ident="acc-nom">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              accusative and nominative case.</desc>
+                        </valItem>
+                        <valItem ident="acc-voc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              accusative and vocative case.</desc>
+                        </valItem>
+                        <valItem ident="dat-gen">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the dative
+                              and genitive case.</desc>
+                        </valItem>
+                        <valItem ident="dat-nom">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the dative
+                              and nominative case.</desc>
+                        </valItem>
+                        <valItem ident="dat-voc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the dative
+                              and vocative case.</desc>
+                        </valItem>
+                        <valItem ident="gen-nom">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              genitive and nominative case.</desc>
+                        </valItem>
+                        <valItem ident="gen-voc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              genitive and vocative case.</desc>
+                        </valItem>
+                        <valItem ident="nom-voc">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in the
+                              nominative and vocative case.</desc>
+                        </valItem>
+                        <valItem ident="und">
+                           <desc xml:lang="en" versionDate="2024-12-12">Legend written in an
+                              undefined case.</desc>
+                        </valItem>
+
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
 
             <!-- altIdentifier -->
             <!-- AS 2024-03-10; changes deleted AS 2024-04-16 -->
@@ -70,10 +157,10 @@
 
             <!-- c -->
             <!-- AS 2023-11-20 -->
-            <!-- for the encoding of Athena Ruby's characters: TO BE REVISED / NOT IN USE YET -->
-            <elementSpec ident="c" module="analysis" mode="change">
+            <!-- for the encoding of Athena Ruby's characters: TO BE REVISED / NOT IN USE -->
+            <!--<elementSpec ident="c" module="analysis" mode="change">
                <attList>
-                  <!-- constraining values of c/@type -->
+                  <!-\- constraining values of c/@type -\->
                   <attDef ident="type" mode="replace" usage="req">
                      <valList type="closed">
                         <valItem ident="glyph">
@@ -83,7 +170,7 @@
                      </valList>
                   </attDef>
                </attList>
-            </elementSpec>
+            </elementSpec>-->
 
             <!-- collection -->
             <!-- AS 2024-03-05 -->
@@ -605,9 +692,8 @@
                   <constraint>
                      <sch:pattern>
                         <sch:rule context="tei:figure//tei:figDesc[@n='r']">
-                           <sch:assert
-                              test="@ana">With figDesc/@n='r' nested in figure,
-                              @ana is required</sch:assert>
+                           <sch:assert test="@ana">With figDesc/@n='r' nested in figure, @ana is
+                              required</sch:assert>
                         </sch:rule>
                      </sch:pattern>
                      <sch:pattern>
@@ -1608,8 +1694,8 @@
                               the seal itself.</desc>
                         </valItem>
                         <valItem ident="drawing">
-                           <desc xml:lang="en" versionDate="2024-03-26">For a digital reproduction of
-                              a drawing of a seal.</desc>
+                           <desc xml:lang="en" versionDate="2024-03-26">For a digital reproduction
+                              of a drawing of a seal.</desc>
                         </valItem>
                         <valItem ident="analog">
                            <desc xml:lang="en" versionDate="2024-03-26">For a digital reproduction
