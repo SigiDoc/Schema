@@ -1608,8 +1608,8 @@
                         <valItem ident="labarum">
                            <desc xml:lang="en" versionDate="2024-12-01"/>
                         </valItem>
-                        <valItem ident="medaillon">
-                           <desc xml:lang="en" versionDate="2024-12-01">A medaillon is depicted
+                        <valItem ident="medallion">
+                           <desc xml:lang="en" versionDate="2024-12-01">A medallion is depicted
                               (mostly Christ).</desc>
                         </valItem>
                         <valItem ident="medical-instruments">
